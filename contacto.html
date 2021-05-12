@@ -13,10 +13,13 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header id="header">
-      <img id="logo" src="img/logo.jpg" alt="logo" />
-      <p>AMPARO CONSUMIDOR</p>
+  <!-- comienzo del body -->
+  <body class="gridBody">
+    <!-- comienzo del header -->
+    <header class="headerFlex">
+      <div class="headerFlex">
+        <a href="index.html" class="logo">AMPARO CONSUMIDOR</a>
+      </div>
       <nav>
         <ul>
           <li><a href="index.html">HOME</a></li>
@@ -27,44 +30,113 @@
         </ul>
       </nav>
     </header>
-
-    <h1 class="titulo">Contacto</h1>
-    <p>Brindanos tu contacto y nos estaremos comunicando a la brevedad:</p>
-
-    <form id="formulario" action="" method="POST">
-      <label for="nombre">Nombre:</label>
-      <input type="text" name="Nombre" id="" /><br />
-      <label for="apellido">Apellido:</label>
-      <input type="text" name="Apellido" id="" /><br />
-      <label for="mail">Mail:</label>
-      <input type="email" name="Mail" id="" /><br />
-      <label for="telefono">Teléfono:</label>
-      <input type="number" name="telefono" id="" /><br />
-      <p>hombre</p>
-      <input type="radio" name="genero" id="" value="hombre" />
-      <p>mujer</p>
-      <input type="radio" name="genero" id="" value="mujer" /><br />
-      <label for="mensaje">Detalle su consulta</label><br />
-      <textarea name="mensaje" id="" cols="30" rows="10"></textarea><br />
-      <label for="newsletter">¿Desea recibir nuestro newsletter?</label>
-      <input type="checkbox" name="newsletter" id="" value="1" /><br />
-      <label for="comonosconociste">¿Cómo nos conociste?</label>
-      <select name="comonosconociste" id="">
-        <option value="redessociales">Redes Sociales</option>
-        <option value="publicidad">Publicidad</option>
-        <option value="referidos">Referidos</option>
-        <option value="otros">Otros</option></select
-      ><br />
-      <input type="submit" name="" value="Enviar" id="" /><br />
-      <input type="reset" name="" value="Limpiar formulario" id="" />
-    </form>
-
-    <footer id="footer">
-      <p>copyright Gaspar Nuncia</p>
-      <div>
-        <a href="https://www.instagram.com/amparoconsumidor/">instagram</a>
-        <a href="https://www.linkedin.com/in/gnuncia/">linkedin</a>
+    <!-- comienzo del main -->
+    <main class="contenido">
+      <h1 class="titulo">Contacto</h1>
+      <div class="formFlex">
+        <p>Brindanos tu contacto y nos estaremos comunicando a la brevedad:</p>
+        <form id="formulario" action="" method="POST" class="gridContacto">
+          <input
+            class="espaciadoInput"
+            type="text"
+            name="Nombre"
+            id=""
+            placeholder="Nombre"
+            style="grid-area: nombre"
+          />
+          <input
+            class="espaciadoInput"
+            type="text"
+            name="Apellido"
+            id=""
+            placeholder="Apellido"
+            style="grid-area: apellido"
+          />
+          <input
+            class="espaciadoInput"
+            type="email"
+            name="Mail"
+            id=""
+            placeholder="E-mail"
+            style="grid-area: email"
+          />
+          <input
+            class="espaciadoInput"
+            type="number"
+            name="telefono"
+            id=""
+            placeholder="Teléfono"
+            style="grid-area: telefono"
+          />
+          <div style="grid-area: genero">
+            <label for="genero">Género:</label>
+            <div class="espaciadoInput" style="display: inline-block">
+              <input type="radio" name="genero" id="" value="hombre" />
+              <p>hombre</p>
+              <input type="radio" name="genero" id="" value="mujer" />
+              <p>mujer</p>
+            </div>
+          </div>
+          <div style="grid-area: conociste">
+            <label for="comonosconociste">¿Cómo nos conociste?</label>
+            <select name="comonosconociste" id="">
+              <option value="redessociales">Redes Sociales</option>
+              <option value="publicidad">Publicidad</option>
+              <option value="referidos">Referidos</option>
+              <option value="otros">Otros</option>
+            </select>
+          </div>
+          <textarea
+            name="mensaje"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Mensaje"
+            style="grid-area: mensaje"
+          ></textarea>
+          <div style="grid-area: newsletter">
+            <label for="newsletter">¿Desea recibir nuestro newsletter?</label>
+            <input type="checkbox" name="newsletter" id="" value="1" />
+          </div>
+          <input
+            type="submit"
+            name=""
+            value="Enviar"
+            style="grid-area: enviar"
+          />
+          <input
+            type="reset"
+            name=""
+            value="Limpiar formulario"
+            style="grid-area: reset"
+          />
+        </form>
+      </div>
+    </main>
+    <!-- comienzo del footer -->
+    <footer class="gridFooter">
+      <div class="footer-social" style="grid-area: redes">
+        <ul class="footer-social-list">
+          <li>
+            <a href="https://www.instagram.com/amparoconsumidor/"
+              ><img src="img/icon/instagram.png" alt="Instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/gnuncia/"
+              ><img src="img/icon/linkedin.png" alt="Linkedin"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div id="footer-copyright" style="grid-area: copyright">
+        <ul class="footer-copyright-list">
+          <li>
+            <p class="copyright">@ 2021 Copyright Gaspar Nuncia</p>
+          </li>
+        </ul>
       </div>
     </footer>
+    <!-- Aqui finaliza el footer -->
   </body>
 </html>

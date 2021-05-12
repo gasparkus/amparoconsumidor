@@ -13,10 +13,13 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header id="header">
-      <img id="logo" src="img/logo.jpg" alt="logo" />
-      <p>AMPARO CONSUMIDOR</p>
+  <!-- comienzo del body -->
+  <body class="gridBody">
+    <!-- comienzo del header -->
+    <header class="headerFlex">
+      <div class="headerFlex">
+        <a href="index.html" class="logo">AMPARO CONSUMIDOR</a>
+      </div>
       <nav>
         <ul>
           <li><a href="index.html">HOME</a></li>
@@ -27,13 +30,30 @@
         </ul>
       </nav>
     </header>
-
-    <h1 class="titulo">Novedades de Jurisprudencia</h1>
-    <table id="jurisprudenciaNovedades">
-      <th>Fuero</th>
-      <th>Jurisprudencia</th>
-      <tr>
-        <td>Consumeril</td>
+    <!-- comienzo del main -->
+    <main class="contenido">
+      <h1 class="titulo">Novedades de Jurisprudencia</h1>
+      <table id="jurisprudenciaNovedades">
+        <th>Fuero</th>
+        <th>Jurisprudencia</th>
+        <tr>
+          <td>Consumeril</td>
+          <td>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo
+            eleifend lorem vel rhoncus. Cras vehicula laoreet mollis. Duis
+            eleifend viverra maximus. Ut a tincidunt augue. Donec interdum
+            mollis enim, malesuada sodales leo dignissim et. Donec pharetra sem
+            et vehicula venenatis. Sed sed mattis eros. Duis facilisis elementum
+            varius. Sed egestas consectetur condimentum. Ut aliquam purus quis
+            ipsum mollis, quis ultrices dui ullamcorper. Vivamus accumsan
+            ultricies mollis. Etiam in urna tortor. Fusce id suscipit ex.
+            Phasellus ac auctor ante, feugiat commodo risus. Maecenas libero
+            nibh, varius eget est sit amet, iaculis egestas lectus. Vestibulum
+            egestas porttitor efficitur. Suspendisse potenti. Nulla facilisi.
+            Quisque ut sapien mauris.
+          </td>
+        </tr>
+        <td>Comercial</td>
         <td>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo
           eleifend lorem vel rhoncus. Cras vehicula laoreet mollis. Duis
@@ -48,29 +68,32 @@
           porttitor efficitur. Suspendisse potenti. Nulla facilisi. Quisque ut
           sapien mauris.
         </td>
-      </tr>
-      <td>Comercial</td>
-      <td>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo
-        eleifend lorem vel rhoncus. Cras vehicula laoreet mollis. Duis eleifend
-        viverra maximus. Ut a tincidunt augue. Donec interdum mollis enim,
-        malesuada sodales leo dignissim et. Donec pharetra sem et vehicula
-        venenatis. Sed sed mattis eros. Duis facilisis elementum varius. Sed
-        egestas consectetur condimentum. Ut aliquam purus quis ipsum mollis,
-        quis ultrices dui ullamcorper. Vivamus accumsan ultricies mollis. Etiam
-        in urna tortor. Fusce id suscipit ex. Phasellus ac auctor ante, feugiat
-        commodo risus. Maecenas libero nibh, varius eget est sit amet, iaculis
-        egestas lectus. Vestibulum egestas porttitor efficitur. Suspendisse
-        potenti. Nulla facilisi. Quisque ut sapien mauris.
-      </td>
-    </table>
-
-    <footer id="footer">
-      <p>copyright Gaspar Nuncia</p>
-      <div>
-        <a href="https://www.instagram.com/amparoconsumidor/">instagram</a>
-        <a href="https://www.linkedin.com/in/gnuncia/">linkedin</a>
+      </table>
+    </main>
+    <!-- Aqui comienza el footer -->
+    <footer class="gridFooter">
+      <div class="footer-social" style="grid-area: redes">
+        <ul class="footer-social-list">
+          <li>
+            <a href="https://www.instagram.com/amparoconsumidor/"
+              ><img src="img/icon/instagram.png" alt="Instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/gnuncia/"
+              ><img src="img/icon/linkedin.png" alt="Linkedin"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div id="footer-copyright" style="grid-area: copyright">
+        <ul class="footer-copyright-list">
+          <li>
+            <p class="copyright">@ 2021 Copyright Gaspar Nuncia</p>
+          </li>
+        </ul>
       </div>
     </footer>
+    <!-- Aqui finaliza el footer -->
   </body>
 </html>

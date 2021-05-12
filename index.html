@@ -13,10 +13,12 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header>
-      <img id="logo" src="img/logo.jpg" alt="logo" />
-      <p>AMPARO CONSUMIDOR</p>
+  <body class="gridBody">
+    <!-- Aqui comienza el header -->
+    <header class="headerFlex">
+      <div class="headerFlex">
+        <a href="index.html" class="logo">AMPARO CONSUMIDOR</a>
+      </div>
       <nav>
         <ul>
           <li><a href="index.html">HOME</a></li>
@@ -27,52 +29,66 @@
         </ul>
       </nav>
     </header>
-    <h1 class="titulo">Home</h1>
-    <section id="primerSeccion">
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/jkDg3V3-oMo"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet
-        dui est. Vestibulum quis placerat augue. Aliquam eu magna ac libero
-        iaculis vulputate. Curabitur sed arcu et lacus malesuada sodales ut sit
-        amet lectus. Curabitur luctus, erat in tincidunt rutrum, dui erat
-        commodo augue, eget sodales elit est eget nisi. Nunc ornare turpis
-        tortor, sed mollis purus pretium sed. Nulla aliquam tortor id tortor
-        euismod, sit amet efficitur nisl efficitur. Cras lorem metus, aliquet
-        vitae lobortis egestas, scelerisque et neque. Donec nibh ante, lacinia
-        sed dolor id, rutrum molestie mi. Nunc eleifend libero quis consectetur
-        eleifend. Pellentesque tincidunt quam sit amet placerat egestas. Ut
-        interdum libero enim, vel porta turpis porta nec. In non neque tempor,
-        consectetur mi sit amet, porttitor lorem. Donec leo mauris, tempus nec
-        mi quis, vehicula faucibus magna. Nullam fringilla congue erat eu
-        commodo. Donec eu felis dui. Nam dignissim dui id est ultrices, vitae
-        sagittis nulla convallis. Duis nec purus leo. Ut ac ex dui. Suspendisse
-        euismod sapien orci, vel eleifend lectus faucibus at. Mauris risus
-        massa, hendrerit a aliquam ornare, congue et velit. Ut quis dapibus
-        ipsum. Donec posuere fringilla tincidunt. Cras metus sapien, faucibus
-        eget lorem id, viverra elementum massa. Integer sit amet lacus tellus.
-        Sed suscipit consequat lacus. Sed a dolor lorem. Nunc quis justo semper
-        nisl semper maximus. Sed vulputate porta orci ac dictum. Integer eget
-        nisl maximus, consectetur tortor malesuada, convallis sapien.
-        Suspendisse lobortis hendrerit nunc. In sem ipsum, dignissim
-        pellentesque eleifend quis, pretium sed ante. Sed a accumsan risus, at
-        dignissim neque. Vivamus tincidunt ipsum id accumsan molestie. Etiam
-        hendrerit odio ac nibh auctor varius.
-      </p>
-    </section>
-
-    <footer>
-      <p>copyright Gaspar Nuncia</p>
-      <div>
-        <a href="https://www.instagram.com/amparoconsumidor/">instagram</a>
-        <a href="https://www.linkedin.com/in/gnuncia/">linkedin</a>
+    <!-- Aqui finaliza el header -->
+    <!-- Aqui comienza el contenido -->
+    <main class="contenido">
+      <img src="img/background.jpg" alt="foto-principal" style="width: 100%" />
+      <section class="sectionFlex">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/jkDg3V3-oMo"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <div>
+          <h1>Estamos para ayudarte</h1>
+          <p>
+            Cada vez que adquiris un producto o contratas un servicio, de forma
+            gratuita u onerosa, sea público o privado, para vos , tu familia o
+            grupo social, estás amparado por la Ley 24.240 de Defensa al
+            Consumidor.
+            <br /><br />Cualquier consumidor que compra productos o contrata
+            servicios tiene derecho a hacer un reclamo (no necesitas ser titular
+            del producto o servicio para hacer el reclamo, simplemente basta con
+            que seas usuario/a).<br /><br />
+            A fin de que puedas resguardar tus derechos como consumidor, siempre
+            es conveniente que cuentes con documentación respaldatoria de
+            denuncia: ticket, factura, contrato, entre otros.<br />
+            <br />
+            En Amparo Consumidor, nuestro compromiso es asesorarte y acompañarte
+            durante todo el proceso de tu reclamo, brindándote un servicio
+            orientado a resultados.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- Aqui finaliza el contenido -->
+    <!-- Aqui comienza el footer -->
+    <footer class="gridFooter">
+      <div class="footer-social" style="grid-area: redes">
+        <ul class="footer-social-list">
+          <li>
+            <a href="https://www.instagram.com/amparoconsumidor/"
+              ><img src="img/icon/instagram.png" alt="Instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/gnuncia/"
+              ><img src="img/icon/linkedin.png" alt="Linkedin"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div id="footer-copyright" style="grid-area: copyright">
+        <ul class="footer-copyright-list">
+          <li>
+            <p class="copyright">@ 2021 Copyright Gaspar Nuncia</p>
+          </li>
+        </ul>
       </div>
     </footer>
+    <!-- Aqui finaliza el footer -->
   </body>
 </html>
