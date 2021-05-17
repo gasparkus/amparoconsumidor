@@ -1,137 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Amparo Consumidor - Servicios</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
     <!-- agrego google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <!-- comienzo del body -->
-  <body class="gridBody">
-    <!-- comienzo del header -->
-    <header class="headerFlex">
-      <div class="headerFlex">
-        <a href="index.html" class="logo">AMPARO CONSUMIDOR</a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="equipo.html">EQUIPO</a></li>
-          <li><a href="servicios.html">SERVICIOS</a></li>
-          <li><a href="novedades.html">NOVEDADES</a></li>
-          <li><a href="contacto.html">CONTACTO</a></li>
-        </ul>
-      </nav>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- aqui comienza el header-->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark headerColor leftToRight">
+            <a href="index.html" class="navbar-brand" id="logo">AMPARO CONSUMIDOR</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipo.html">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="novedades.html">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <!-- comienzo del main -->
-    <main class="contenido">
-      <h1 class="titulo">Servicios</h1>
-      <table id="tablaServicios">
-        <th>Especialidades</th>
-        <th>Descripción</th>
-        <tr>
-          <td>Derecho del Consumidor</td>
-          <td>
-            Nuestro equipo está conformado por profesionales especializados en
-            el manejo de asuntos de defensa del consumidor y lealtad comercial.
-            Asimismo, representamos a nuestros clientes en procesos judiciales y
-            administrativos. Asimismo, contamos con una amplia red de abogados
-            en el territorio argentino. Contamos con vasta experiencia sector
-            industrial, automotriz, seguro, farmacéutico, financiero, de
-            telecomunicaciones, planes de salud y planes de ahorro para
-            propósitos específicos.
-          </td>
-        </tr>
-        <tr>
-          <td>Derecho Empresario</td>
-          <td>
-            Destacamos que nuestro equipo de Derecho Empresario brinda
-            asesoramiento a sociedades cerradas y aquellas sociedades que se
-            encuentran autorizadas a hacer oferta pública de acciones y de
-            obligaciones negociables. Asiste en procesos de reorganización
-            societaria y en el cumplimiento periódico y habitual con las
-            diversas normas vigentes en materia societaria. Asimismo, asesora en
-            todos los aspectos de la vida corporativa; desde constituciones
-            societarias simples, estatutos y acuerdos de accionistas a medida, a
-            sofisticadas fusiones/adquisiciones, spin-offs y otros tipos de
-            reorganizaciones societarias.
-          </td>
-        </tr>
-        <tr>
-          <td>Fintech & Technologies</td>
-          <td>
-            Nuestro asesoramiento en la materia es comprensivo, incluyendo todos
-            los aspectos regulatorios (nacional, provincial y municipal), desde
-            el start up de un proyecto hasta su eventual venta, aportando valor
-            durante todo el proceso. Nuestros especialistas en el sector se
-            mantienen actualizados con los aspectos legales del proceso de
-            desarrollo e innovación tecnológica, proporcionando asesoramiento
-            integral a portales de internet y empresas de comercio electrónico
-            en todo lo relativo al resguardo y la garantía de la propiedad
-            intelectual, la elaboración y análisis de contratos, la protección
-            de datos personales y la protección del consumidor, el empleo de la
-            firma electrónica y de la firma digital, servicios de
-            telecomunicaciones, mensajería, VolP, hosting, block-chain, smart
-            grids (en el proceso de convergencia con el sector de transmisión y
-            distribución de electricidad), Internet of Thinks o Internet de las
-            Cosas, electrificación.
-          </td>
-        </tr>
-        <tr>
-          <td>Derecho Comercial</td>
-          <td>
-            El área de Litigios posee un amplio dominio del derecho civil,
-            comercial y procesal, conociendo en profundidad las complejidades de
-            los trámites judiciales, tanto por reclamos individuales como en
-            acciones colectivas. Brinda soluciones a los más variados planteos
-            tanto en calidad de demandantes como demandados.
-          </td>
-        </tr>
-        <tr>
-          <td>Derecho del Trabajo</td>
-          <td>
-            El área de Derecho Laboral y Previsional del Estudio tiene una
-            extensa experiencia brindando asesoramiento en la problemática
-            laboral. Nuestros profesionales poseen un conocimiento profundo y
-            exhaustivo de la materia, lo que permite brindar soluciones
-            adecuadas a fin de maximizar las operaciones y minimizar los riesgos
-            y situaciones de conflicto. Contamos con una vasta red de abogados
-            lo que nos permite representar a nuestros clientes en todo el país.
-          </td>
-        </tr>
-      </table>
+    <!-- aqui comienza el main-->
+    <main>
+        <section class="container leftToRight">
+            <br>
+            <br>
+            <h2 class="display-4 vert-move">Servicios</h2>
+            <br>
+            <div class="container">
+                <!-- Example row of columns -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>Derecho del Consumidor</h2>
+                        <p>Nuestro equipo está conformado por profesionales especializados en el manejo de asuntos de defensa del consumidor y lealtad comercial. Asimismo, representamos a nuestros clientes en procesos judiciales y administrativos. Asimismo, contamos con una amplia red de abogados en el territorio argentino. Contamos con vasta experiencia sector industrial, automotriz, seguro, farmacéutico, financiero, de telecomunicaciones, planes de salud y planes de ahorro para propósitos específicos.</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">Ver más &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Derecho Empresario</h2>
+                        <p>Destacamos que nuestro equipo de Derecho Empresario brinda asesoramiento a sociedades cerradas y aquellas sociedades que se encuentran autorizadas a hacer oferta pública de acciones y de obligaciones negociables. Asiste en procesos de reorganización societaria y en el cumplimiento periódico y habitual con las diversas normas vigentes en materia societaria. Asimismo, asesora en todos los aspectos de la vida corporativa; desde constituciones societarias simples, estatutos y acuerdos de accionistas a medida, a sofisticadas fusiones/adquisiciones, spin-offs y otros tipos de reorganizaciones societarias.</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">Ver más &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Fintech & Technologies</h2>
+                        <p>Nuestro asesoramiento en la materia es comprensivo, incluyendo todos los aspectos regulatorios (nacional, provincial y municipal), desde el start up de un proyecto hasta su eventual venta, aportando valor durante todo el proceso.</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">Ver más &raquo;</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>Derecho Comercial</h2>
+                        <p>El área de Litigios posee un amplio dominio del derecho civil, comercial y procesal, conociendo en profundidad las complejidades de los trámites judiciales, tanto por reclamos individuales como en acciones colectivas. Brinda soluciones a los más variados planteos tanto en calidad de demandantes como demandados.</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">Ver más &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Derecho del Trabajo</h2>
+                        <p>El área de Derecho Laboral y Previsional del Estudio tiene una extensa experiencia brindando asesoramiento en la problemática laboral. Nuestros profesionales poseen un conocimiento profundo y exhaustivo de la materia, lo que permite brindar soluciones adecuadas a fin de maximizar las operaciones y minimizar los riesgos y situaciones de conflicto. Contamos con una vasta red de abogados lo que nos permite representar a nuestros clientes en todo el país.</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">Ver más &raquo;</a></p>
+                    </div>
+                </div>
+                <hr>
+            </div> <!-- /container -->
+        </section>
     </main>
     <!-- Aqui comienza el footer -->
-    <footer class="gridFooter">
-      <div class="footer-social" style="grid-area: redes">
-        <ul class="footer-social-list">
-          <li>
-            <a href="https://www.instagram.com/amparoconsumidor/"
-              ><img src="img/icon/instagram.png" alt="Instagram"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/gnuncia/"
-              ><img src="img/icon/linkedin.png" alt="Linkedin"
-            /></a>
-          </li>
-        </ul>
-      </div>
-      <div id="footer-copyright" style="grid-area: copyright">
-        <ul class="footer-copyright-list">
-          <li>
-            <p class="copyright">@ 2021 Copyright Gaspar Nuncia</p>
-          </li>
-        </ul>
-      </div>
+    <footer class="blog-footer">
+        <p>@ 2021 Copyright Gaspar Nuncia</p>
+        <p>
+            <a href="https://www.instagram.com/amparoconsumidor/">Instagram</a>
+            <a href="https://www.linkedin.com/in/gnuncia/">Linkedin</a>
+            <a href="#">Back to top</a>
+        </p>
     </footer>
-    <!-- Aqui finaliza el footer -->
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
 </html>
