@@ -1,0 +1,226 @@
+$background-color-header: linear-gradient(
+  90deg,
+  rgba(2, 0, 36, 1) 0%,
+  rgba(9, 121, 95, 1) 35%,
+  rgba(0, 212, 255, 1) 100%
+);
+$family-font: "Kiwi Maru", serif;
+
+@import "header";
+@import "footer";
+
+/*FORMATEO CSS*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/*BODY*/
+body {
+  background-color: #080c0c;
+  font-family: $family-font;
+  color: #cdebe7;
+  font-style: normal;
+}
+
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  grid-area: aside;
+  align-self: start;
+  margin-left: 20px;
+  ul li {
+    padding: 0px;
+    display: block;
+  }
+}
+
+/*ETIQUETAS*/
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+li {
+  display: inline-block;
+  position: relative;
+  padding: 20px;
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #080c0c;
+    letter-spacing: 2px;
+    padding: 5px;
+  }
+}
+
+section p {
+  padding: 15px;
+  text-align: justify;
+}
+section iframe {
+  padding: 15px;
+}
+section p {
+  padding: 25px;
+}
+section h1 {
+  padding-left: 25px;
+}
+
+h2 {
+  text-align: center;
+}
+
+/*CLASES*/
+
+.contenido {
+  grid-area: contenido;
+}
+
+.contenido__titulo {
+  color: #5dc1b9;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 25px;
+  font-size: 200%;
+}
+
+.contenido__nombre {
+  align-self: center;
+}
+.contenido__experiencia {
+  grid-area: titExperiencia;
+}
+.contenido__educacion {
+  grid-area: titEducacion;
+}
+
+.experiencia {
+  grid-area: experiencia;
+}
+.educacion {
+  grid-area: educacion;
+}
+
+.gridEquipoSection {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr auto 1fr auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas:
+    "aside titExperiencia"
+    "aside experiencia"
+    "aside titEducacion"
+    "aside educacion";
+}
+
+.contenido__imgSize {
+  height: 300px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+/*TABLA*/
+table {
+  border: 5px solid;
+  border-color: rgb(146, 92, 12);
+  background-color: #0c5e54;
+  margin-bottom: 10px;
+}
+td {
+  border: 3px solid;
+  border-color: rgb(146, 92, 12);
+  padding: 30px;
+  text-align: justify;
+}
+th {
+  border-color: rgb(146, 92, 12);
+  font-weight: bolder;
+}
+tr {
+  border-color: rgb(146, 92, 12);
+}
+/*FORM*/
+form {
+  padding: 20px;
+  input {
+    margin: 5px;
+  }
+  p {
+    display: inline-block;
+  }
+  label {
+    color: steelblue;
+  }
+}
+
+/*FLEX*/
+
+.contenido__sectionFlex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px;
+}
+.contenido__formFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*GRIDS */
+.gridBody {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "header"
+    "contenido"
+    "footer";
+}
+
+.gridContacto {
+  display: grid;
+  grid-template-areas:
+    "nombre apellido"
+    "email telefono"
+    "genero conociste"
+    "mensaje mensaje"
+    "newsletter newsletter"
+    "enviar reset";
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: repeat(2, 40%);
+  row-gap: 20px;
+  column-gap: 20px;
+  justify-content: center;
+}
+
+/*Desafio 12*/
+
+/*Declaramos mapa de colores para los a del header*/
+$itemsHeader: (home: #656565,
+equipo: #4c4c4c,
+servicios: #333333,
+novedades: #1d1d1d,
+contacto: #000000);
+
+/*Modificando colores de los items del header*/
+@each $item,
+$color in $itemsHeader {
+    .itemColor-#{$item} {
+        color: $color;
+        @if $item==home {
+            text-decoration: underline;
+        }
+        @else {
+            font-style: normal;
+        }
+    }
+}

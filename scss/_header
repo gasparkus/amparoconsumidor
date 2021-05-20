@@ -1,0 +1,29 @@
+/*HEADER*/
+header {
+  background-color: #1f6357;
+  grid-area: header;
+  background: $background-color-header;
+  a:hover {
+    color: white;
+  }
+  nav {
+    align-self: center;
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+.header__logo {
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0;
+  align-self: center;
+}
+// .headerItem {
+//   display: flex;
+//   justify-content: start;
+// }
