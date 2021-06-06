@@ -13,60 +13,11 @@ body {
 /*HEADER*/
 header {
   background-color: #1f6357;
-  grid-area: header;
+  padding: 15px;
   background: linear-gradient(90deg, #020024 0%, #09795f 35%, #00d4ff 100%); }
 
 header a:hover {
   color: white; }
-
-header nav {
-  align-self: center; }
-
-/*ETIQUETAS*/
-ul {
-  list-style-type: none;
-  overflow: hidden; }
-
-li {
-  display: inline-block;
-  position: relative;
-  padding: 20px; }
-
-li a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #080c0c;
-  letter-spacing: 2px;
-  padding: 5px; }
-
-section p {
-  padding: 15px;
-  text-align: justify; }
-
-section iframe {
-  padding: 15px; }
-
-section p {
-  padding: 25px; }
-
-section h1 {
-  padding-left: 25px; }
-
-aside {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  grid-area: aside;
-  align-self: start;
-  margin-left: 20px; }
-
-h2 {
-  text-align: center; }
-
-aside ul li {
-  padding: 0px;
-  display: block; }
 
 /*CLASES*/
 .titulo {
@@ -77,14 +28,15 @@ aside ul li {
   padding: 25px;
   font-size: 200%; }
 
-.logo {
+#logo {
   text-align: center;
   justify-content: center;
   padding: 20px;
   font-weight: bold;
   text-decoration: none;
   margin: 0;
-  align-self: center; }
+  align-self: center;
+  font-size: 140%; }
 
 .imgSize {
   height: 300px;
@@ -92,26 +44,6 @@ aside ul li {
   margin-left: auto;
   margin-right: auto;
   display: block; }
-
-/*TABLA*/
-table {
-  border: 5px solid;
-  border-color: #925c0c;
-  background-color: #0c5e54;
-  margin-bottom: 10px; }
-
-td {
-  border: 3px solid;
-  border-color: #925c0c;
-  padding: 30px;
-  text-align: justify; }
-
-th {
-  border-color: #925c0c;
-  font-weight: bolder; }
-
-tr {
-  border-color: #925c0c; }
 
 /*FORM*/
 form label {
@@ -125,27 +57,6 @@ form input {
 
 form {
   padding: 20px; }
-
-/*FLEX*/
-.headerFlex {
-  display: flex;
-  justify-content: space-around; }
-
-.headerItem {
-  display: flex;
-  justify-content: start; }
-
-.sectionFlex {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 25px; }
-
-.formFlex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
 
 /* FOOTER */
 footer div {
@@ -463,3 +374,274 @@ footer div img {
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem; } }
+
+@media screen and (max-width: 768px) {
+  #logo {
+    font-size: 120%; } }
+
+@media screen and (max-width: 480px) {
+  #logo {
+    font-size: 120%; }
+  .imgSize {
+    height: 200px;
+    width: 200px; } }
+
+@media screen and (max-width: 480px) {
+  #logo ::before {
+    content: "\a";
+    white-space: pre; }
+  .display-4 {
+    font-size: 2.5rem; } }
+
+@media screen and (max-width: 320px) {
+  #logo {
+    font-size: 100%; }
+  .imgSize {
+    height: 150px;
+    width: 150px; } }
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+/* body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+} */
+/* MARKETING CONTENT
+-------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center; }
+
+.marketing h2 {
+  font-weight: 400; }
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem; }
+
+/* Featurettes
+------------------------- */
+.featurette-divider {
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */ }
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem; }
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4; }
+  .featurette-heading {
+    font-size: 50px; } }
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem; } }
+
+.page-section {
+  padding: 6rem 0; }
+
+.page-section h2.section-heading,
+.page-section .section-heading.h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+.page-section h3.section-subheading,
+.page-section .section-subheading.h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 4rem; }
+
+.text-muted {
+  color: #6c757d !important; }
+
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none; }
+
+.timeline:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  width: 2px;
+  margin-left: -1.5px;
+  content: "";
+  background-color: #e9ecef; }
+
+.timeline > li {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 50px; }
+
+.timeline > li:after,
+.timeline > li:before {
+  display: table;
+  content: " "; }
+
+.timeline > li:after {
+  clear: both; }
+
+.timeline > li .timeline-panel {
+  position: relative;
+  float: right;
+  width: 100%;
+  padding: 0 20px 0 100px;
+  text-align: left; }
+
+.timeline > li .timeline-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0; }
+
+.timeline > li .timeline-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0; }
+
+.timeline > li .timeline-image {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  margin-left: 0;
+  text-align: center;
+  color: white;
+  border: 7px solid #e9ecef;
+  border-radius: 100%;
+  background-color: #ffc800; }
+
+.timeline > li .timeline-image h4,
+.timeline > li .timeline-image .h4 {
+  font-size: 10px;
+  line-height: 14px;
+  margin-top: 12px; }
+
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+  padding: 0 20px 0 100px;
+  text-align: left; }
+
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0; }
+
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0; }
+
+.timeline > li:last-child {
+  margin-bottom: 0; }
+
+.timeline .timeline-heading h4,
+.timeline .timeline-heading .h4 {
+  margin-top: 0;
+  color: inherit; }
+
+.timeline .timeline-heading h4.subheading,
+.timeline .timeline-heading .subheading.h4 {
+  text-transform: none; }
+
+.timeline .timeline-body > ul,
+.timeline .timeline-body > p {
+  margin-bottom: 0; }
+
+@media (min-width: 768px) {
+  .timeline:before {
+    left: 50%; }
+  .timeline > li {
+    min-height: 100px;
+    margin-bottom: 100px; }
+  .timeline > li .timeline-panel {
+    float: left;
+    width: 41%;
+    padding: 0 20px 20px 30px;
+    text-align: right; }
+  .timeline > li .timeline-image {
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px; }
+  .timeline > li .timeline-image h4,
+  .timeline > li .timeline-image .h4 {
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 16px; }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+    padding: 0 30px 20px 20px;
+    text-align: left; } }
+
+@media (min-width: 992px) {
+  .timeline > li {
+    min-height: 150px; }
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px; }
+  .timeline > li .timeline-image {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px; }
+  .timeline > li .timeline-image h4,
+  .timeline > li .timeline-image .h4 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 30px; }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 20px 20px; } }
+
+@media (min-width: 1200px) {
+  .timeline > li {
+    min-height: 170px; }
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px 100px; }
+  .timeline > li .timeline-image {
+    width: 170px;
+    height: 170px;
+    margin-left: -85px; }
+  .timeline > li .timeline-image h4,
+  .timeline > li .timeline-image .h4 {
+    margin-top: 40px; }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 100px 20px 20px; } }
+
+.team-member {
+  margin-bottom: 3rem;
+  text-align: center; }
+
+.team-member img {
+  width: 14rem;
+  height: 14rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1); }
+
+.team-member h4,
+.team-member .h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0; }
+
+.img-brand {
+  height: 2.75rem; }
+
+footer {
+  background: linear-gradient(90deg, #020024 0%, #09795f 35%, #00d4ff 100%);
+  margin-bottom: 0; }
